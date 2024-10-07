@@ -22,7 +22,9 @@ function App() {
             <SearchPanel/>
             <AppFilter/>
          </div>
-         <EmployeerList data={data}/>
+         <EmployeerList 
+            data={data}
+            onDelete={id => console.log(id) }/>
          <EmployeesAddForm/>
       </div>
    )
